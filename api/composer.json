@@ -1,0 +1,16 @@
+{
+    "name": "lautyfarias/shopping-cart",
+    "description": "Simple shopping cart with php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Lautaro Farias",
+            "email": "lautarofarias.616@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "slim/slim": "4.*",
+        "slim/psr7": "1.2.0"
+    }
+}
