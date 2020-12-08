@@ -8,7 +8,6 @@ fetchProductDetail = (slug) => {
             </div>
             <hr/><h2 class="product-view-title">${data.name}</h2><hr/>
                 <img class="product-view-image" src="./assets/images/${data.image}" alt="${data.slug}">
-                <p class="product-view-description">${data.description}</p>
                 <div class="product-view-footer">
                     <p class="product-view-price">$ ${data.price}</p>
                     <i onclick="stock(-1)" class="fas fa-caret-left icon-caret-left"></i>
