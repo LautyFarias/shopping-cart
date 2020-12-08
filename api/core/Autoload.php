@@ -9,8 +9,6 @@ class Autoload
                 require_once MODELS_ROOT . '/' . $class_name . '.php';
             } elseif (file_exists(CORE_ROOT . '/' . $class_name . '.php')) {
                 require_once CORE_ROOT . '/' . $class_name . '.php';
-            } elseif (file_exists(CONTROLLERS_ROOT . '/' . $class_name . '.php')) {
-                require_once CONTROLLERS_ROOT . '/' . $class_name . '.php';
             }
         });
     }

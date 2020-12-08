@@ -7,9 +7,9 @@ class Card extends Component {
                 <h4 class="card-title">${title}</h4>
                 <div class="card-footer">
                     <p class="card-price">$ ${price}</p>
-                    <a href="http://localhost:5000/${slug}" class="card-button">
+                    <button onclick="redirect('${slug}')" class="card-button">
                         Ver más
-                    </a>
+                    </button>
                 </div>
             </div>`;
     }

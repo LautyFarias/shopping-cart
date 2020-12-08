@@ -21,7 +21,7 @@ services:
 
   frontend:
     image: nginx:1.19
-    container_name: webserver-front
+    container_name: frontend
     ports:
       - 5000:80
     volumes:

@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMARTCART</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./assets/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spin.js/4.1.0/spin.css"
+        integrity="sha512-/ePAkBFgsGvT91dfBaYvL7uDBLV1BHmTB7H7VVQCWvprV01Cqn6Ws0hLoqHYp1g3s8byzKPG+3ADFPR6yVXJDw=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
-    <div id="container"></div>
+    <div id="container">
+        <button id="cart-button" class="fas fa-shopping-cart icon-shopping-cart"></button>
+    </div>
+    <script src="./lib/spin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./components/component.js"></script>
     <script src="./components/card.js"></script>
-    <script>
-        fetch('http://localhost:8888/api/products', { method: 'GET' })
-            .then(res => res.json())
-            .then(data => !data ? "Our catalog is empty, sorry!" : data.map(
-                element => new Card(element.name, element.image, element.price, element.slug).template
-            ))
-            .then(processedData => {
-                const productListDiv = document.createElement('div');
-                productListDiv.id = 'product-list';
-                productListDiv.innerHTML = processedData.join('');
-                return productListDiv;
-            })
-            .then(element => {
-                document.getElementById('container').appendChild(element);
-            });
-    </script>
+    <script src="./components/cart-card.js"></script>
+    <script src="./components/cart.js"></script>
+    <script src="./pages/product-detail.js"></script>
+    <script src="./pages/product-list.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
