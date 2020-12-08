@@ -13,4 +13,4 @@ fetchProductList = () => {
         .then(element => {
             document.getElementById('container').appendChild(element);
         });
-}
+};
