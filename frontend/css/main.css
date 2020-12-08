@@ -224,6 +224,7 @@ a {
 
 #cart-button {
   color: var(--white);
+  font-size: 1.8em;
   text-align: center;
   background-color: var(--hard-red);
   width: 60px;
