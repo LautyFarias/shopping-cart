@@ -1,5 +1,5 @@
 fetchProductDetail = (slug) => {
-    fetch(`http://localhost:8888/api/products/${slug}`, { method: 'GET' })
+    fetch(`https://smart-cart-api.herokuapp.com/api/products/${slug}`, { method: 'GET' })
         .then(res => res.json())
         .then(data => !data ? "Product not found, sorry!" : `
             <div class="product-view-data">

@@ -33,7 +33,7 @@ class Cart {
                 spinnerBackground.classList.add("spinner-background");
                 document.getElementById('container').appendChild(spinnerBackground);
 
-                let mail_response = await fetch("http://localhost:8888/api/mail/send", {
+                let mail_response = await fetch("https://smart-cart-api.herokuapp.com/api/mail/send", {
                     method: 'POST',
                     body: JSON.stringify({
                         email: email,

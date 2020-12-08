@@ -1,5 +1,5 @@
 fetchProductList = () => {
-    fetch('http://localhost:8888/api/products', { method: 'GET' })
+    fetch('https://smart-cart-api.herokuapp.com/api/products', { method: 'GET' })
         .then(res => res.json())
         .then(data => !data ? "Our catalog is empty, sorry!" : data.map(
             element => new Card(element.name, element.image, element.price, element.slug).template
